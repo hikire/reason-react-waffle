@@ -1,0 +1,34 @@
+{
+    "name": "reason-react-waffle",
+    "version": "0.1.0",
+    "description": "The power of streams, now in ReasonReact!",
+    "scripts": {
+        "start": "bsb -make-world -w",
+        "build": "bsb -make-world",
+        "clean": "bsb -clean-world",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZuraJanaiNazayDa/reason-react-waffle.git"
+    },
+    "keywords": ["reasonml", "streams", "react"],
+    "author":
+        "Yazan Alkheder <ZuraJanaiNazayDa@gmail.com> (http://ZuraJanaiNazayDa.github.io/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ZuraJanaiNazayDa/reason-react-waffle/issues"
+    },
+    "homepage":
+        "https://github.com/ZuraJanaiNazayDa/reason-react-waffle#readme",
+    "devDependencies": {
+        "@glennsl/bs-jest": "^0.4.2",
+        "bs-enzyme": "^0.4.0",
+        "bs-platform": "^3.0.0",
+        "enzyme-adapter-react-16": "^1.1.1"
+    },
+    "dependencies": {
+        "reason-react": "^0.4.1",
+        "reason-waffle": "^0.1.0"
+    }
+}
