@@ -31,9 +31,8 @@ module CreateConsumer = (C: Config) => {
         | Some(v) => children(v, C.stream#pour)
         | None => ReasonReact.null
         },
-      subscriptions: self => [
-        Sub(() => listen(v => self.send(SetValue(v))), unSub => unSub()),
-      ],
+      didMount: ({send, onUnmount}) =>
+        listen(v => send(SetValue(v))) |> onUnmount,
     };
   };
 };

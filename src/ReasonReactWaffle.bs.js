@@ -36,7 +36,12 @@ function CreateConsumer(C) {
             /* reactClassInternal */component[/* reactClassInternal */1],
             /* handedOffState */component[/* handedOffState */2],
             /* willReceiveProps */component[/* willReceiveProps */3],
-            /* didMount */component[/* didMount */4],
+            /* didMount */(function (param) {
+                var send = param[/* send */3];
+                return Curry._1(param[/* onUnmount */4], listen((function (v) {
+                                  return Curry._1(send, /* SetValue */[v]);
+                                })));
+              }),
             /* didUpdate */component[/* didUpdate */5],
             /* willUnmount */component[/* willUnmount */6],
             /* willUpdate */component[/* willUpdate */7],
@@ -58,21 +63,7 @@ function CreateConsumer(C) {
             /* reducer */(function (action, _) {
                 return /* Update */Block.__(0, [/* record */[/* value : Some */[action[0]]]]);
               }),
-            /* subscriptions */(function (self) {
-                return /* :: */[
-                        /* Sub */[
-                          (function () {
-                              return listen((function (v) {
-                                            return Curry._1(self[/* send */3], /* SetValue */[v]);
-                                          }));
-                            }),
-                          (function (unSub) {
-                              return Curry._1(unSub, /* () */0);
-                            })
-                        ],
-                        /* [] */0
-                      ];
-              }),
+            /* subscriptions */component[/* subscriptions */13],
             /* jsElementWrapped */component[/* jsElementWrapped */14]
           ];
   };
