@@ -32,8 +32,8 @@ let root = {
     ...(({count}, pour) => {
       <div>
         <h1>(str(string_of_int(count)))</h1>
-        <button onClick={ _e => send(Counter.Inc)}>(str("+"))</button>
-        <button onClick={ _e => send(Counter.Dec)}>(str("-"))</button>
+        <button onClick={ _e => pour(Counter.Inc)}>(str("+"))</button>
+        <button onClick={ _e => pour(Counter.Dec)}>(str("-"))</button>
       </div>
     })
     </Counter.Consumer>
